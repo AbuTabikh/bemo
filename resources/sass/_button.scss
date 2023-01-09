@@ -1,0 +1,59 @@
+@import "variable";
+
+.btn {
+
+    display: inline-block;
+    cursor: pointer;
+    display: inline-block;
+    font-family: $btn-font-family;
+    font-weight: $btn-font-weight;
+    color: $body-color;
+    text-align: left;
+    text-decoration: if($link-decoration == none, null, none);
+    white-space: $btn-white-space;
+    vertical-align: middle;
+    user-select: none;
+    background-color: transparent;
+    border: $btn-border-width solid transparent;
+    height: 32px;
+    width: 100%;
+    margin-top: 0;
+    min-height: 32px;
+    padding: 0 15px;
+    cursor: pointer;
+
+
+    &:hover {
+        transition: opacity 0.3s;
+        opacity: 0.6;
+    }
+
+    &__primary {
+        background-color: $primary;
+        color: white;
+
+        &__outlined {
+            border: 1px solid $primary;
+            color: $primary;
+        }
+    }
+
+    &__secondary {
+        background-color: $secondary;
+        color: white;
+
+        &__outlined {
+            border: 1px solid $secondary;
+            color: $secondary;
+        }
+    }
+
+    &__export_db {
+        float: right;
+        text-decoration: none;
+        padding: 0 25px;
+        background: $white;
+
+    }
+
+}
